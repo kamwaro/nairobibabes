@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2d2d2d;
+}
+
+.block_header {
+  display: flex;
+  justify-content: center;
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 2rem;
+  color: #e7b828;
+}
+.card_container {
+  display: flex;
+  padding: 1rem;
+  margin: 3rem;
+  background-color: #2d2d2d;
+  border-top: 1px solid grey;
+}
+
+.img_container {
+  display: flex;
+  padding: 1rem;
+  border-right: 1px solid white;
+}
+
+.img_sm_container {
+  padding: 0 10px;
+}
+
+.img_sm {
+  list-style-type: none;
+}
+
+.card_header {
+  padding: 10px;
+  color: #fff;
+  font-family: 'Yeon Sung', cursive;
+}
+.card_header_heading {
+  color: #e7b828;
+}
+
+.card_btn {
+  margin: 1.5em 0.5em;
+  padding: 10px 14px;
+  color: #e7b828;
+  background-color: #3d3d3d;
+  border: 0;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 480px) {
+  .block_header {
+    font-size: 1rem;
+  }
+  .card_container {
+    flex-direction: column;
+    border-top: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .img_container {
+    border-right: none;
+    padding: 0;
+    border-bottom: 1px solid grey;
+    justify-content: center;
+  }
+
+  .card_content {
+    font-size: 1.4rem;
+  }
+}
